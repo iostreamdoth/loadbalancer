@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="ResultsView.WebInterface.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Include/css/bootstrap.css" rel="stylesheet" />
+    <link href="Include/css/Application.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" enctype="multipart/form-data" runat="server">
+        <input type="hidden" id="hdnLatitude" runat="server" />
+        <input type="hidden" id="hdnLongitude" runat="server" />
+
+        <asp:HiddenField ID="hdnLatitude1"  runat="server"/>
+        <asp:HiddenField ID="hdnLongitude1"  runat="server"/>
+
+        <div class="container">
+            <nav class="navbar navbar-inverse"  role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#"></a> 
+                        <asp:LinkButton CssClass="navbar-brand"  OnClick="lnkHome1_Click" runat="server" ID="lnkHome1">Results View</asp:LinkButton>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class=""><asp:LinkButton OnClick="lnkHome_Click" runat="server" ID="lnkHome">Home</asp:LinkButton></li>
+                            <li class=""><asp:LinkButton runat="server" OnClick="lnkUpldF_Click" ID="lnkUpldF">Upload</asp:LinkButton></li>
+                            <li class=""><asp:LinkButton runat="server" OnClick="lnkBillingU_Click" ID="lnkBillingU">Billing</asp:LinkButton></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><asp:LinkButton runat="server" ID="lnkSignIn" OnClick="lnkSignIn_Click" ClientIDMode="Static">Sign In</asp:LinkButton>
+                                <asp:LinkButton runat="server" ID="lnkSignOut" OnClick="lnkSignOut_Click" ClientIDMode="Static">Sign Out</asp:LinkButton>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <div class="mainbox">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="Include/js/jquery.min.js"></script>
+<script src="Include/js/bootstrap.min.js"></script>
+    <script>
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+
+        function success(pos) {
+            var crd = pos.coords;
+
+            console.log('Your current position is:');
+            console.log('Latitude : ' + crd.latitude);
+            console.log('Longitude: ' + crd.longitude);
+            console.log('More or less ' + crd.accuracy + ' meters.');
+            if (document.getElementById("hdnLatitude").value == "") {
+                document.getElementById("hdnLatitude").value = crd.latitude;
+            }
+            if (document.getElementById("hdnLongitude").value == "") {
+                document.getElementById("hdnLongitude").value = crd.longitude;
+            }
+
+            //alert("You location is Latitude: " + crd.latitude + " Longitude:" + crd.longitude);
+        };
+
+        function error(err) {
+            console.warn('ERROR(' + err.code + '): ' + err.message);
+        };
+
+        navigator.geolocation.getCurrentPosition(success, error, options);
+    </script>
+</html>

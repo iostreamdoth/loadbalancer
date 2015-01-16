@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>10/11/2014 18:07:26</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.dll">
+      <publishTime>10/11/2014 18:07:26</publishTime>
+    </File>
+    <File Include="bin/MySql.Web.dll">
+      <publishTime>10/11/2014 18:07:26</publishTime>
+    </File>
+    <File Include="bin/WebApplication1.dll">
+      <publishTime>12/18/2014 00:03:44</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>11/25/2014 03:29:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/18/2014 00:05:22</publishTime>
+    </File>
+    <File Include="WebInterface/AlgoChart.aspx">
+      <publishTime>12/09/2014 15:26:37</publishTime>
+    </File>
+    <File Include="WebInterface/Charts.aspx">
+      <publishTime>12/08/2014 12:35:01</publishTime>
+    </File>
+    <File Include="WebInterface/Default.aspx">
+      <publishTime>11/25/2014 00:40:15</publishTime>
+    </File>
+    <File Include="WebInterface/Error.aspx">
+      <publishTime>11/13/2014 20:28:18</publishTime>
+    </File>
+    <File Include="WebInterface/Include/css/Application.css">
+      <publishTime>11/13/2014 18:18:52</publishTime>
+    </File>
+    <File Include="WebInterface/Include/css/bootstrap-theme.css">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/css/bootstrap-theme.css.map">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/css/bootstrap-theme.min.css">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/css/bootstrap.css">
+      <publishTime>11/08/2014 20:39:31</publishTime>
+    </File>
+    <File Include="WebInterface/Include/css/bootstrap.css.map">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/css/bootstrap.min.css">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/js/bootstrap.js">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/js/bootstrap.min.js">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Include/js/Chart.js">
+      <publishTime>11/24/2014 04:14:49</publishTime>
+    </File>
+    <File Include="WebInterface/Include/js/jquery.min.js">
+      <publishTime>11/08/2014 20:02:12</publishTime>
+    </File>
+    <File Include="WebInterface/Include/js/npm.js">
+      <publishTime>11/08/2014 19:58:14</publishTime>
+    </File>
+    <File Include="WebInterface/Index.aspx">
+      <publishTime>11/25/2014 03:29:32</publishTime>
+    </File>
+    <File Include="WebInterface/Login.aspx">
+      <publishTime>11/13/2014 16:56:47</publishTime>
+    </File>
+    <File Include="WebInterface/Master.Master">
+      <publishTime>12/17/2014 23:02:28</publishTime>
+    </File>
+    <File Include="WebInterface/Signup.aspx">
+      <publishTime>12/18/2014 00:04:58</publishTime>
+    </File>
+    <File Include="WebInterface/SignupSuccess.aspx">
+      <publishTime>11/13/2014 20:28:18</publishTime>
+    </File>
+    <File Include="WebInterface/Upload.aspx">
+      <publishTime>11/13/2014 19:19:59</publishTime>
+    </File>
+    <File Include="WebInterface/ViewBilling.aspx">
+      <publishTime>12/09/2014 00:41:07</publishTime>
+    </File>
+    <File Include="WebInterface/ViewResult.aspx">
+      <publishTime>11/13/2014 21:14:11</publishTime>
+    </File>
+    <File Include="WebInterface/ZoneChart.aspx">
+      <publishTime>12/09/2014 14:49:39</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+c:\users\nishant\documents\visual studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+c:\users\nishant\documents\visual studio 2012\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+c:\users\nishant\documents\visual studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\ResultsView.csprojResolveAssemblyReference.cache
+c:\users\nishant\documents\visual studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.dll
+c:\users\nishant\documents\visual studio 2012\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.pdb
+C:\Users\Nishant\documents\visual studio 2012\Projects\WebApplication1\WebApplication1\bin\MySql.Data.dll
+C:\Users\Nishant\documents\visual studio 2012\Projects\WebApplication1\WebApplication1\bin\MySql.Data.Entity.dll
+C:\Users\Nishant\documents\visual studio 2012\Projects\WebApplication1\WebApplication1\bin\MySql.Web.dll
